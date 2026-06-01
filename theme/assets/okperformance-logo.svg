@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OKPerformance — primary logo (option U: OK+)
+
+  Colors:
+    - Wordmark: #ffffff      (change to your text color as needed)
+    - "+" accent: #c4b5fd    (soft lavender — matches your purple palette)
+    - Tagline:  #ffffff, 85% opacity
+
+  Font stack falls back to system sans-serif. For pixel-perfect rendering
+  across devices, open this file in Figma/Illustrator and "convert text
+  to outlines/paths" before deploying — that bakes the letter shapes in.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 340 160"
+     width="340" height="160"
+     role="img" aria-labelledby="okp-title">
+  <title id="okp-title">OKPerformance</title>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+     text-anchor="middle">
+    <!-- Wordmark: bold OK + thin lavender plus -->
+    <text x="170" y="100"
+          font-size="96"
+          font-weight="700"
+          letter-spacing="-3"
+          fill="#ffffff">OK<tspan font-size="58"
+                                  font-weight="300"
+                                  fill="#c4b5fd"
+                                  dy="-22"
+                                  dx="2">+</tspan></text>
+
+    <!-- Tagline -->
+    <text x="170" y="138"
+          font-size="13"
+          font-weight="400"
+          letter-spacing="5"
+          fill="#ffffff"
+          opacity="0.85">PERFORMANCE</text>
+  </g>
+</svg>

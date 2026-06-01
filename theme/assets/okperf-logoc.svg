@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OKPerformance — "D · Barbell" monogram
+  The O becomes a weight plate; the bar runs through it. K sits to the right.
+  Transparent background (SVG is transparent by default).
+
+  Colors:
+    - All strokes / fills: #ffffff  (swap to #0a0612 for light backgrounds)
+
+  Tweak points:
+    - stroke-width="6" on the O and K, stroke-width="4" on the bar, to keep
+      the plate visually heavier than the shaft.
+    - Collar rectangles (10x24) sit flush against the edges of the viewBox.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 220 120"
+     width="220" height="120"
+     role="img" aria-labelledby="okp-dbar-title">
+  <title id="okp-dbar-title">OKPerformance — D · Barbell monogram</title>
+
+  <!-- Barbell shaft running through the O -->
+  <line x1="10" y1="60" x2="210" y2="60"
+        stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Collar plates (ends of the barbell) -->
+  <rect x="4"   y="48" width="10" height="24" fill="#ffffff"/>
+  <rect x="206" y="48" width="10" height="24" fill="#ffffff"/>
+
+  <!-- O — the big weight plate -->
+  <circle cx="80" cy="60" r="36"
+          fill="none" stroke="#ffffff" stroke-width="6"/>
+
+  <!-- K — stem + two legs -->
+  <line x1="130" y1="30" x2="130" y2="90"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="60" x2="165" y2="30"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="60" x2="165" y2="90"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OKPerformance — "D · Barbell" monogram + wordmark
+  The O becomes a weight plate; the bar runs through it. K sits to the right.
+  Small "OK PERFORMANCE" tracked-out tagline sits below.
+  Transparent background (SVG is transparent by default).
+
+  Colors:
+    - All strokes / fills: #ffffff  (swap to #0a0612 for light backgrounds)
+    - Tagline: #ffffff @ 70% opacity (matches the .wm-tag-sm style)
+
+  Notes:
+    - Tagline font-size 9, letter-spacing 3.6 (≈ 0.40em at 9px) mirrors the
+      .wm-tag-sm definition in the source HTML.
+    - For pixel-perfect rendering, open in Figma/Illustrator and convert the
+      tagline text to outlines before deploying.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 220 160"
+     width="220" height="160"
+     role="img" aria-labelledby="okp-dbar-title">
+  <title id="okp-dbar-title">OKPerformance — D · Barbell monogram</title>
+
+  <!-- ===== Mark ===== -->
+  <!-- Barbell shaft running through the O -->
+  <line x1="10" y1="60" x2="210" y2="60"
+        stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Collar plates (ends of the barbell) -->
+  <rect x="4"   y="48" width="10" height="24" fill="#ffffff"/>
+  <rect x="206" y="48" width="10" height="24" fill="#ffffff"/>
+
+  <!-- O — the big weight plate -->
+  <circle cx="80" cy="60" r="36"
+          fill="none" stroke="#ffffff" stroke-width="6"/>
+
+  <!-- K — stem + two legs -->
+  <line x1="130" y1="30" x2="130" y2="90"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="60" x2="165" y2="30"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="130" y1="60" x2="165" y2="90"
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ===== Tagline ===== -->
+  <text x="110" y="146"
+        text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="15"
+        font-weight="400"
+        letter-spacing="5"
+        fill="#ffffff"
+        fill-opacity="0.85">OK PERFORMANCE</text>
+</svg>
